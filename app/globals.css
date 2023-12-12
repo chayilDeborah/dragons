@@ -2,26 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.dis {
+    border-radius: 3px;
+background: var(--foundation-grey-darker, #0C0C0C);
+box-shadow: -4px 4px 0px 0px rgba(38, 38, 38, 0.93);
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.twit {
+    border-radius: 3px;
+border: 1px solid #000;
+box-shadow: -4px 4px 0px 0px rgba(38, 38, 38, 0.93);
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.hatch {
+    border: 1px solid #919191;
+/* background: url(<path-to-image>), lightgray 50% / cover no-repeat; */
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
